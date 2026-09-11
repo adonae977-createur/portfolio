@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://PLACEHOLDER-DOMAINE.web.app/sitemap.xml
+Sitemap: https://rodrigue-sawadogo-portfolio.web.app/sitemap.xml

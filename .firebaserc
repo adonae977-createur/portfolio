@@ -1,0 +1,13 @@
+{
+  "projects": {},
+  "targets": {
+    "my-pro-jet-b7c8c": {
+      "hosting": {
+        "portfolio": [
+          "rodrigue-sawadogo-portfolio"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
