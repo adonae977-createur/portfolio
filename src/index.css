@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Sora", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --color-ink: #0b1220;
+  --color-canvas: #faf9f6;
+  --color-accent: #c2812f;
+  --color-accent-soft: #f1dfc8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
