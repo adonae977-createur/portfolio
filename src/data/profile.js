@@ -76,6 +76,11 @@ export const timeline = [
     detail: "Sirba Live Score déployé pour le comité d'organisation : suivi des matchs, résultats, actualités, communication.",
   },
   {
+    year: "En cours",
+    title: "Développement de WifiZone Manager",
+    detail: "PWA Minerva Solutions pour la gestion et la vente de tickets wifi par les gérants de zones wifi au Burkina Faso — publication sur Google Play prévue après le passage au plan Firebase Blaze (déc. 2026).",
+  },
+  {
     year: "Nov. 2026 (prévu)",
     title: "Formalisation de Minerva Solutions en SASU",
     detail: "Structuration juridique de l'activité de solutions numériques, actuellement opérée sous la couverture légale de WBST.",

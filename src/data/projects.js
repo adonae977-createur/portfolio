@@ -113,10 +113,47 @@ export const projects = [
     status: "DEVELOPPEMENT",
     summary:
       "Plateforme de centralisation des appels d'offres publics et privés (Burkina Faso, extension UEMOA envisagée) — recherche, filtrage, catégorisation, modération.",
-    tech: ["React", "Vite", "Firebase (Firestore, Auth, Hosting)"],
+    tech: ["React", "Vite", "Firebase (Firestore, Auth, Hosting)", "PWA"],
     url: "https://minerva-7a5c3.web.app",
     featured: true,
     priority: 5,
+    caseStudy: {
+      contexte:
+        "Au Burkina Faso, les appels d'offres publics et privés restent dispersés entre plusieurs canaux (avis papier, pages Facebook, alertes email payantes comme J360, sites d'institutions), sans plateforme centralisée facile à consulter et à vérifier.",
+      besoin:
+        "Centraliser, vérifier et qualifier les opportunités professionnelles (appels d'offres, cotations, manifestations d'intérêt, recrutements, formations, financements, partenariats) pour les entreprises et professionnels du Burkina Faso, avec un contrôle de fiabilité avant toute publication.",
+      solution:
+        "Reconstruction complète de la plateforme en React et Firebase (Firestore, Auth, Hosting) : recherche et filtrage par secteur, inscription entreprise avec validation manuelle par l'administrateur, publication de marchés avec modération obligatoire, compteurs globaux alimentés côté serveur, installation PWA, et une assistante de veille dédiée qui recherche, nettoie, vérifie et note chaque opportunité (score de pertinence et score de validité distincts) avant de la proposer à validation — jamais de publication automatique.",
+      role:
+        "Conception du modèle de données, développement full-stack, règles de sécurité Firestore par rôle, workflow de modération entreprise/annonce, et conception de l'assistant de veille des opportunités.",
+      resultats:
+        "Plateforme en ligne avec inscription, authentification, publication et modération fonctionnelles de bout en bout, testées sur un cycle complet entreprise → admin. Installation PWA confirmée sur appareils réels. Intégration d'une source d'alertes J360 avec digest hebdomadaire automatisé. Migration vers le plan Firebase Blaze et les Cloud Functions (statistiques serveur, expiration automatique, alertes email) prévue fin septembre 2026.",
+      preuves: "Application publique : minerva-7a5c3.web.app",
+    },
+  },
+  {
+    slug: "wifizone-manager",
+    title: "WifiZone Manager",
+    category: "Technologie / Entrepreneuriat",
+    status: "DEVELOPPEMENT",
+    summary:
+      "PWA pour Minerva Solutions aidant les gérants de zones wifi (wifizones) au Burkina Faso à créer, imprimer, distribuer et suivre la vente de tickets wifi, avec achat à distance par mobile money.",
+    tech: ["React", "Vite", "Firebase (Firestore, Auth)", "PWA"],
+    featured: true,
+    priority: 6,
+    caseStudy: {
+      contexte:
+        "Dans les zones wifi (wifizones) du Burkina Faso, les tickets d'accès sont aujourd'hui vendus sur place et écrits à la main sur des tickets papier découpés — un système coûteux pour le gérant et contraignant pour les clients, qui doivent se déplacer physiquement pour acheter leur accès.",
+      besoin:
+        "Permettre aux gérants de wifizones de créer, imprimer et suivre la vente de tickets numériques, et aux clients d'acheter leur accès à distance par mobile money — y compris les utilisateurs peu familiers du numérique.",
+      solution:
+        "PWA React et Firebase avec vitrine dédiée par wifizone, création de tickets, comptes clients avec programme de fidélité, achat par mobile money via un agrégateur de paiement (Orange Money en priorité), et modèle d'abonnement pour les gérants plutôt qu'une commission par transaction.",
+      role:
+        "Conception produit et technique — modèle de données, choix de l'agrégateur de paiement et de la région d'hébergement — et développement en cours.",
+      resultats:
+        "Projet en développement actif, propriété de Minerva Solutions SASU. L'authentification par SMS pour les numéros du Burkina Faso est en attente du passage au plan Firebase Blaze (prévu décembre 2026), préalable à la publication sur Google Play.",
+      preuves: "Dépôt de code privé — démonstration à joindre une fois disponible.",
+    },
   },
   {
     slug: "wend-benedo-bois",
@@ -126,7 +163,7 @@ export const projects = [
     summary: "Site vitrine présentant l'activité de menuiserie et les réalisations en bois.",
     tech: ["React", "Vite", "PWA", "Netlify"],
     featured: false,
-    priority: 6,
+    priority: 7,
   },
   {
     slug: "gestion-classe-infirmiers",
@@ -136,7 +173,7 @@ export const projects = [
     summary: "Web App / PWA destinée à faciliter la gestion et le suivi des activités d'une classe d'étudiants en soins infirmiers.",
     tech: ["React", "Vite", "Tailwind CSS", "Firebase", "Firestore", "Auth"],
     featured: false,
-    priority: 7,
+    priority: 8,
   },
   {
     slug: "elearning-biologie",
@@ -146,17 +183,19 @@ export const projects = [
     summary: "PWA éducative de révision interactive pour étudiants en sciences de la santé — quiz, apprentissage gamifié.",
     tech: ["React", "Firebase"],
     featured: false,
-    priority: 8,
+    priority: 9,
   },
   {
     slug: "yiriwa",
     title: "Yiriwa",
-    category: "Technologie",
+    category: "Technologie / Entrepreneuriat",
     status: "PROTOTYPE",
-    summary: "Blog / plateforme média sur l'économie, l'entrepreneuriat et les opportunités d'affaires en Afrique de l'Ouest.",
-    tech: [],
+    statusNote: "Page d'accueil livrée ; développement ultérieur non confirmé.",
+    summary:
+      "Portail B2B pour le Burkina Faso dédié aux appels d'offres, annonces professionnelles et mises en relation d'affaires (inspiré de J360) — statistiques animées, recherche avancée par onglets, badges réservés PME.",
+    tech: ["HTML/CSS/JS"],
     featured: false,
-    priority: 9,
+    priority: 10,
   },
   {
     slug: "bijouterie-lankoande",
@@ -166,7 +205,7 @@ export const projects = [
     summary: "Site vitrine / catalogue marchand avec prise de commande directe via WhatsApp.",
     tech: [],
     featured: false,
-    priority: 10,
+    priority: 11,
   },
   {
     slug: "retro-racing",
@@ -176,7 +215,7 @@ export const projects = [
     summary: "Jeu vidéo web — course cycliste rétro jouable dans le navigateur.",
     tech: ["JavaScript"],
     featured: false,
-    priority: 11,
+    priority: 12,
   },
 ]
 
