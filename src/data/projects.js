@@ -62,11 +62,13 @@ export const projects = [
     slug: "wbst",
     title: "WBST — Wend Benedo Services et Travaux",
     category: "Entrepreneuriat / Menuiserie & Agencement",
-    status: "A_VERIFIER",
-    statusNote: "Activité réelle depuis 2004 — présentation détaillée en attente de visuels et documents à publier.",
+    status: "PRODUCTION",
+    statusNote:
+      "Site web vérifié en ligne (GitHub Pages) ; domaine personnalisé wendbenedo-bois.bf prévu, DNS non encore actif.",
     summary:
-      "Entreprise de menuiserie bois, métallique et agencement (2004, formalisée en 2017) : mobilier, aménagement intérieur et extérieur, mobilier scolaire, marchés publics et privés.",
-    tech: [],
+      "Entreprise de menuiserie bois haut de gamme, métallique et agencement (2004, formalisée en 2017) : mobilier en essences nobles (Teck, Vène), aménagement intérieur et extérieur, mobilier scolaire, école de formation CQP/BQP, marchés publics et privés.",
+    tech: ["React", "Vite", "Tailwind CSS", "GitHub Pages"],
+    url: "https://adonae977-createur.github.io/wendbenedo-services-et-travaux.bf/",
     featured: true,
     priority: 3,
     caseStudy: {
@@ -74,12 +76,13 @@ export const projects = [
       besoin:
         "Structurer, développer et faire connaître les activités de menuiserie bois, métallique et d'agencement, tout en répondant à des marchés publics et privés.",
       solution:
-        "Implication dans la gestion d'activités, la coordination d'équipes, la préparation de documents professionnels (devis, factures proforma, dossiers de soumission) et le développement commercial.",
+        "Implication dans la gestion d'activités, la coordination d'équipes, la préparation de documents professionnels (devis, factures proforma, dossiers de soumission), le développement commercial et la création d'un site web professionnel présentant l'entreprise.",
       role:
-        "Implication dans la direction et le développement de l'entreprise aux côtés d'autres intervenants — gestion, coordination, formation et accompagnement de jeunes vers le CQP/BQP.",
+        "Implication dans la direction et le développement de l'entreprise aux côtés d'autres intervenants — gestion, coordination, formation et accompagnement de jeunes vers le CQP/BQP, conception et développement du site web.",
       resultats:
-        "Marchés publics et privés menés dans les secteurs de la menuiserie et de l'agencement ; dimension de transmission et de formation professionnelle active.",
-      preuves: "À VÉRIFIER — documents et références à joindre.",
+        "Marchés publics et privés menés dans les secteurs de la menuiserie et de l'agencement ; dimension de transmission et de formation professionnelle active ; site web professionnel en ligne présentant l'entreprise, ses essences de bois (Teck, Vène) et son école de formation CQP/BQP.",
+      preuves:
+        "Site public : adonae977-createur.github.io/wendbenedo-services-et-travaux.bf (domaine wendbenedo-bois.bf prévu). Chiffres de marchés — À VÉRIFIER, documents à joindre.",
     },
   },
   {
@@ -156,24 +159,17 @@ export const projects = [
     },
   },
   {
-    slug: "wend-benedo-bois",
-    title: "Wend-Benedo-Bois",
-    category: "Technologie / Menuiserie",
-    status: "A_VERIFIER",
-    summary: "Site vitrine présentant l'activité de menuiserie et les réalisations en bois.",
-    tech: ["React", "Vite", "PWA", "Netlify"],
+    slug: "gestion-classe-infirmiers",
+    title: "InfiniCare Studio",
+    category: "Technologie",
+    status: "CONCEPT",
+    statusNote:
+      "Dépôt de code existant (dashboards Admin/Étudiant/Enseignant) ; démonstration publique non disponible actuellement.",
+    summary:
+      "Portail PWA mobile-first pour instituts de sciences infirmières, inspiré des logiques cognitives de Duolingo, Notion et Google Classroom — suivi, gamification et scolarité des étudiants.",
+    tech: ["React 18", "Vite", "React Router DOM 6", "Tailwind CSS", "Framer Motion", "PWA"],
     featured: false,
     priority: 7,
-  },
-  {
-    slug: "gestion-classe-infirmiers",
-    title: "Application de gestion de classe — Sciences infirmières",
-    category: "Technologie",
-    status: "A_VERIFIER",
-    summary: "Web App / PWA destinée à faciliter la gestion et le suivi des activités d'une classe d'étudiants en soins infirmiers.",
-    tech: ["React", "Vite", "Tailwind CSS", "Firebase", "Firestore", "Auth"],
-    featured: false,
-    priority: 8,
   },
   {
     slug: "elearning-biologie",
@@ -183,7 +179,7 @@ export const projects = [
     summary: "PWA éducative de révision interactive pour étudiants en sciences de la santé — quiz, apprentissage gamifié.",
     tech: ["React", "Firebase"],
     featured: false,
-    priority: 9,
+    priority: 8,
   },
   {
     slug: "yiriwa",
@@ -194,6 +190,18 @@ export const projects = [
     summary:
       "Portail B2B pour le Burkina Faso dédié aux appels d'offres, annonces professionnelles et mises en relation d'affaires (inspiré de J360) — statistiques animées, recherche avancée par onglets, badges réservés PME.",
     tech: ["HTML/CSS/JS"],
+    featured: false,
+    priority: 9,
+  },
+  {
+    slug: "nutritive",
+    title: "Nutritive",
+    category: "Technologie / Santé",
+    status: "CONCEPT",
+    summary:
+      "Application web d'éducation nutritionnelle sous la marque Minerva SASU — suivi calorique, quiz interactifs, plans de repas, programmes dédiés (ex. gestion du diabète).",
+    tech: ["HTML", "CSS", "JavaScript"],
+    url: "https://adonae977-createur.github.io/Nutritive-Skills/",
     featured: false,
     priority: 10,
   },
