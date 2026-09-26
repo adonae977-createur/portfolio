@@ -12,7 +12,7 @@ export const statusLabels = {
 export const projects = [
   {
     slug: "sirba-live-score",
-    title: "Sirba Live Score",
+    title: "Local Live Sport (LLS)",
     category: "Sport & Technologie",
     status: "PRODUCTION",
     summary:
@@ -41,8 +41,8 @@ export const projects = [
     category: "Sport & Technologie",
     status: "PRODUCTION",
     summary:
-      "3ᵉ édition du tournoi de Bogandé : Sirba Live Score utilisé par le comité d'organisation pour le suivi des matchs, la publication des résultats et des actualités, et la communication avec les supporters.",
-    tech: ["Sirba Live Score"],
+      "3ᵉ édition du tournoi de Bogandé : Local Live Sport (LLS) utilisé par le comité d'organisation pour le suivi des matchs, la publication des résultats et des actualités, et la communication avec les supporters.",
+    tech: ["Local Live Sport (LLS)"],
     featured: true,
     priority: 2,
     caseStudy: {
@@ -51,7 +51,7 @@ export const projects = [
       besoin:
         "Donner au comité d'organisation un outil de suivi des matchs, de publication des résultats et actualités, et de communication avec les supporters et les partenaires.",
       solution:
-        "Déploiement de Sirba Live Score comme solution numérique officielle du tournoi, couvrant l'ensemble des phases de la compétition.",
+        "Déploiement de Local Live Sport (LLS) comme solution numérique officielle du tournoi, couvrant l'ensemble des phases de la compétition.",
       role: "Développeur et fournisseur de la solution numérique du tournoi.",
       resultats:
         "Suivi des matchs et des différentes phases, publication de résultats et d'actualités, production de contenus digitaux et valorisation de partenaires. Un chiffre de 13 contrats de sponsoring signés avec des entreprises locales a été évoqué — marqué À VÉRIFIER tant qu'une preuve documentaire n'est pas fournie.",

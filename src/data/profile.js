@@ -67,13 +67,13 @@ export const timeline = [
   },
   {
     year: "En cours",
-    title: "Développement de Sirba Live Score",
+    title: "Développement de Local Live Sport (LLS)",
     detail: "PWA de suivi de compétitions de football en temps réel — en production depuis plusieurs éditions du tournoi MARACANA BO.VA.C.S.",
   },
   {
     year: "2026",
     title: "Digitalisation du tournoi MARACANA BO.VA.C.S 2026 (3ᵉ édition, Bogandé)",
-    detail: "Sirba Live Score déployé pour le comité d'organisation : suivi des matchs, résultats, actualités, communication.",
+    detail: "Local Live Sport (LLS) déployé pour le comité d'organisation : suivi des matchs, résultats, actualités, communication.",
   },
   {
     year: "En cours",

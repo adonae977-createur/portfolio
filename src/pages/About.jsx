@@ -24,7 +24,7 @@ export default function About() {
           Côté numérique, je conçois et développe des sites web, applications web et Progressive Web Apps —
           principalement avec React, Firebase et l'écosystème JavaScript moderne. Je gère l'ensemble du cycle :
           conception, développement, déploiement et maintenance, comme sur{" "}
-          <span className="text-ink font-medium">Sirba Live Score</span>, en production depuis plusieurs
+          <span className="text-ink font-medium">Local Live Sport (LLS)</span>, en production depuis plusieurs
           éditions du tournoi MARACANA BO.VA.C.S à Bogandé.
         </p>
         <p>
