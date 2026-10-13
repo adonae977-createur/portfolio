@@ -6,27 +6,30 @@ const details = {
     "React, Vite, JavaScript ES6+, HTML5/CSS3, Tailwind CSS",
     "Firebase : Firestore, Auth, Storage, Hosting, Cloud Functions, Security Rules",
     "Progressive Web Apps (PWA), React Router, Framer Motion",
+    "Formation : Business Digital School — développement web et applications, niveau 1 (2023–2024)",
     "Cycle complet : conception → développement → test → déploiement → maintenance",
   ],
   Entrepreneuriat: [
-    "Fondateur de Minerva Solutions (formalisation SASU prévue novembre 2026)",
-    "Implication dans la direction de WBST (menuiserie & agencement, depuis 2004)",
-    "Recherche de partenaires et développement commercial",
+    "Fondateur de Minerva Solutions, agence numérique de valorisation locale (formalisation SASU prévue novembre 2026)",
+    "Gérant de WBST (menuiserie & agencement, active depuis 2004) — 2025–2026",
+    "Cinq formations certifiées en entrepreneuriat, leadership et gestion de micro-entreprise (2018–2021)",
+    "Création et direction d'associations de jeunes : APROMEB, AJAP-B, ABCD",
   ],
   "Gestion de projets": [
     "Devis, factures proforma, budgétisation",
     "Dossiers de soumission — marchés publics et privés",
-    "Coordination d'équipes et suivi de projets",
+    "Chef d'atelier et chef d'équipe sur le terrain — abris évolutifs pour le NRC, à Bogandé et Boulsa",
+    "Organisation d'événement : édition 1 du Festival Vacances culturel de Bogandé (juin 2022)",
   ],
   "Menuiserie & Agencement": [
-    "CQP menuiserie/bois et métal (2018), BQP menuiserie/bois et métal (2021)",
+    "CQP et BQP menuiserie bois (formation 2016–2021 ; CQP 2018, BQP 2021)",
     "Conception de mobilier, assemblage, finition, agencement",
     "Matériaux travaillés : bois massif (Iroko, Samba), panneaux dérivés du bois",
   ],
   "Sport & Technologie": [
     "Digitalisation de compétitions sportives locales",
     "Suivi en direct, statistiques, classements, communication événementielle",
-    "Sirba Live Score — en production, plusieurs éditions du tournoi MARACANA BO.VA.C.S",
+    "Local Live Sport (LLS) — en production, 3ᵉ édition du tournoi MARACANA BO.VA.C.S, déployé dans 4 régions (phase 1 nationale en test grandeur nature)",
   ],
 }
 

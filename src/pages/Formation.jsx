@@ -1,27 +1,29 @@
 import useDocumentMeta from "../hooks/useDocumentMeta"
+import {
+  profile,
+  professionalTraining,
+  entrepreneurialTraining,
+  academicPath,
+  earlierDiplomas,
+} from "../data/profile"
 
-const professionalCerts = [
-  {
-    year: "2018",
-    title: "CQP — Certificat de Qualification Professionnelle",
-    detail: "Menuiserie / bois et métal.",
-  },
-  {
-    year: "2021",
-    title: "BQP — Brevet de Qualification Professionnelle",
-    detail: "Menuiserie / bois et métal.",
-  },
-]
-
-const academic = [
-  { title: "Baccalauréat, série D" },
-  { title: "Études supérieures en Sciences Infirmières et Obstétricales" },
-]
+function Entry({ period, title, place, note }) {
+  return (
+    <div className="flex gap-6">
+      <span className="text-sm text-slate-400 w-28 shrink-0">{period}</span>
+      <div>
+        <p className="font-medium text-ink">{title}</p>
+        {place && <p className="text-sm text-slate-500">{place}</p>}
+        {note && <p className="mt-1 text-xs uppercase tracking-wide text-accent">{note}</p>}
+      </div>
+    </div>
+  )
+}
 
 export default function Formation() {
   useDocumentMeta(
     "Formation & Certifications",
-    "CQP (2018) et BQP (2021) en menuiserie/bois et métal, formation académique complémentaire de Rodrigue Donatien Sawadogo."
+    "CQP et BQP en menuiserie bois, formation en développement web, attestations en entrepreneuriat et leadership, parcours académique de Rodrigue Donatien Sawadogo."
   )
   return (
     <section className="mx-auto max-w-3xl px-6 py-24">
@@ -29,40 +31,52 @@ export default function Formation() {
       <h1 className="font-display text-3xl md:text-4xl font-semibold text-ink">Parcours de formation</h1>
 
       <div className="mt-14">
-        <h2 className="font-display text-lg font-semibold text-ink">Formation professionnelle</h2>
+        <h2 className="font-display text-lg font-semibold text-ink">Formation professionnelle et numérique</h2>
         <div className="mt-6 space-y-6">
-          {professionalCerts.map((c) => (
-            <div key={c.title} className="flex gap-6">
-              <span className="text-sm text-slate-400 w-14 shrink-0">{c.year}</span>
-              <div>
-                <p className="font-medium text-ink">{c.title}</p>
-                <p className="text-sm text-slate-500">{c.detail}</p>
-              </div>
-            </div>
+          {professionalTraining.map((c) => (
+            <Entry key={c.title} {...c} />
           ))}
         </div>
       </div>
 
       <div className="mt-14 pt-10 border-t border-slate-200">
-        <h2 className="font-display text-lg font-semibold text-ink">Formation académique</h2>
-        <p className="mt-2 text-sm text-slate-400">
-          Dimension complémentaire du profil — pas l'identité professionnelle principale.
-        </p>
-        <ul className="mt-6 space-y-2">
-          {academic.map((a) => (
-            <li key={a.title} className="text-sm text-slate-700 flex gap-2">
-              <span className="text-accent">—</span>
-              <span>{a.title}</span>
-            </li>
+        <h2 className="font-display text-lg font-semibold text-ink">Formations en entrepreneuriat et leadership</h2>
+        <p className="mt-2 text-sm text-slate-400">Cinq attestations délivrées par des institutions publiques et associatives.</p>
+        <div className="mt-6 space-y-6">
+          {entrepreneurialTraining.map((c) => (
+            <Entry key={c.title} {...c} note="Attestation" />
           ))}
-        </ul>
+        </div>
+      </div>
+
+      <div className="mt-14 pt-10 border-t border-slate-200">
+        <h2 className="font-display text-lg font-semibold text-ink">Parcours académique</h2>
+        <p className="mt-2 text-sm text-slate-400">
+          Dimension complémentaire du profil — l'identité professionnelle reste le numérique, l'entrepreneuriat et le terrain.
+        </p>
+        <div className="mt-6 space-y-6">
+          {academicPath.map((a) => (
+            <Entry key={a.title} {...a} />
+          ))}
+        </div>
+        <p className="mt-6 text-sm text-slate-500">{earlierDiplomas}</p>
+      </div>
+
+      <div className="mt-14 pt-10 border-t border-slate-200">
+        <h2 className="font-display text-lg font-semibold text-ink">Langues et permis</h2>
+        <p className="mt-3 text-sm text-slate-700">
+          <span className="text-slate-400">Langues parlées : </span>
+          {profile.languages.join(", ")}
+        </p>
+        <p className="mt-2 text-sm text-slate-700">{profile.driving}</p>
       </div>
 
       <div className="mt-14 pt-10 border-t border-slate-200">
         <h2 className="font-display text-lg font-semibold text-ink">Transmission</h2>
         <p className="mt-3 text-sm text-slate-600 leading-relaxed">
           WBST a également une dimension de formation pratique et d'accompagnement de jeunes vers le CQP/BQP.
-          Conventions et preuves documentaires à ajouter ici lorsqu'elles seront disponibles.
+          Rodrigue y a exercé comme formateur et chef d'équipe sur le terrain (2025–2026). Conventions et preuves
+          documentaires à ajouter ici lorsqu'elles seront disponibles.
         </p>
       </div>
     </section>

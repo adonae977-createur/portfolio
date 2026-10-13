@@ -18,6 +18,7 @@ export const projects = [
     summary:
       "PWA de suivi de compétitions de football locales en temps réel — scores, buts, cartons, classements, statistiques, actualités.",
     tech: ["React 18", "Vite 5", "Firebase (Firestore, Auth, Hosting, Storage)", "Cloud Functions", "PWA / FCM"],
+    statusNote: "En production — phase 1 nationale en cours de test grandeur nature (2026).",
     url: "https://sirba-live.web.app/",
     featured: true,
     priority: 1,
@@ -31,7 +32,9 @@ export const projects = [
       role:
         "Conception, développement full-stack, architecture Firestore, déploiement et maintenance continue — de la modélisation des données aux Cloud Functions de notification.",
       resultats:
-        "Application en production, utilisée sur plusieurs éditions du tournoi MARACANA BO.VA.C.S à Bogandé, avec une couverture active sur 4 régions et 5 provinces (Fada N'Gourma, Ouagadougou, Bogandé, Boulsa, Piéla) et environ 20 volontaires mobilisés sur le terrain pour la remontée d'informations.",
+        "Application en production, lancée à Bogandé et déployée dans 4 régions du Burkina Faso (phase 1 nationale en cours de test grandeur nature en 2026). Support de la 3ᵉ édition du tournoi MARACANA BO.VA.C.S à Bogandé, avec une couverture active sur 5 provinces (Fada N'Gourma, Ouagadougou, Bogandé, Boulsa, Piéla) et environ 20 jeunes volontaires mobilisés sur le terrain pour la remontée d'informations, de photos et de vidéos.",
+      promotion:
+        "Actions de promotion et de présentation de la solution menées par l'équipe : mission à Fada N'Gourma pour présenter le projet au gouvernorat, au haut-commissariat, à la direction provinciale des sports et de la jeunesse, ainsi qu'à des reporters et des promoteurs de compétitions.",
       preuves: "Application publique : sirba-live.web.app",
     },
   },
@@ -78,7 +81,7 @@ export const projects = [
       solution:
         "Implication dans la gestion d'activités, la coordination d'équipes, la préparation de documents professionnels (devis, factures proforma, dossiers de soumission), le développement commercial et la création d'un site web professionnel présentant l'entreprise.",
       role:
-        "Implication dans la direction et le développement de l'entreprise aux côtés d'autres intervenants — gestion, coordination, formation et accompagnement de jeunes vers le CQP/BQP, conception et développement du site web.",
+        "Gérant de l'entreprise (2025–2026) : gestion administrative, direction de l'atelier, formation et encadrement des équipes sur le terrain, accompagnement de jeunes vers le CQP/BQP, et conception du site web de l'entreprise.",
       resultats:
         "Marchés publics et privés menés dans les secteurs de la menuiserie et de l'agencement ; dimension de transmission et de formation professionnelle active ; site web professionnel en ligne présentant l'entreprise, ses essences de bois (Teck, Vène) et son école de formation CQP/BQP.",
       preuves:
@@ -90,21 +93,21 @@ export const projects = [
     title: "Projet WBST × Norwegian Refugee Council (NRC)",
     category: "Menuiserie & Agencement",
     status: "A_VERIFIER",
-    statusNote: "Réalisation de l'entreprise WBST — responsabilités personnelles à préciser avant publication détaillée.",
+    statusNote: "Réalisation de l'entreprise WBST, rôle de Rodrigue précisé — convention ou attestation NRC/WBST à joindre.",
     summary:
-      "Participation de WBST à un projet du NRC à Bogandé : structures bois et bâches pour environ 720 abris destinés à des personnes déplacées internes.",
+      "Participation de WBST à un projet du NRC à Bogandé et Boulsa : confection d'abris de type évolutif (structures bois et bâches), environ 720 abris destinés à des personnes déplacées internes.",
     tech: [],
     featured: true,
     priority: 4,
     caseStudy: {
       contexte:
-        "Programme du Norwegian Refugee Council (NRC) à Bogandé, portant sur environ 720 abris/tentes destinés à des personnes déplacées internes.",
+        "Programme du Norwegian Refugee Council (NRC) à Bogandé et Boulsa, portant sur environ 720 abris de type évolutif destinés à des personnes déplacées internes.",
       besoin:
         "Fournir des ossatures et structures bois pour les abris, dans un contexte humanitaire avec contraintes de terrain, de délais et de coordination entre intervenants.",
       solution:
         "Intervention de WBST : préparation d'ossatures et structures bois, coordination avec les maçons, installation des bâches, organisation des équipes et contrôle qualité.",
       role:
-        "Participation de terrain au sein de l'équipe WBST — travail d'ossatures bois, coordination avec les maçons, gestion des matériaux, interaction avec les bénéficiaires. Cette réalisation appartient à WBST et aux intervenants du projet, pas à une responsabilité individuelle exclusive.",
+        "Gérant de WBST, chef d'atelier et formateur chef d'équipe sur le terrain (2025–2026) — ossatures bois, coordination avec les maçons, gestion des matériaux, interaction avec les bénéficiaires. Réalisation de l'entreprise WBST, menée en équipe.",
       resultats: "Environ 720 abris concernés par le projet, selon les informations communiquées par WBST.",
       preuves: "À VÉRIFIER — documents ou convention NRC/WBST à joindre si disponibles.",
     },

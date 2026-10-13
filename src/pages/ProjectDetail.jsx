@@ -9,6 +9,7 @@ const sections = [
   { key: "solution", label: "Solution" },
   { key: "role", label: "Mon rôle" },
   { key: "resultats", label: "Résultats" },
+  { key: "promotion", label: "Promotion et présentation" },
   { key: "preuves", label: "Preuves" },
 ]
 

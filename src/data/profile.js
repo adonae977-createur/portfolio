@@ -1,18 +1,22 @@
 // Contenu factuel du profil. Toute donnée non confirmée est marquée "À VÉRIFIER"
 // conformément à la règle éditoriale du projet : ne jamais inventer.
+// Source principale : CV de Rodrigue Donatien Sawadogo (état civil volontairement non publié).
 
 export const profile = {
   name: "Rodrigue Donatien Sawadogo",
   shortName: "Rodrigue",
   location: "Ouagadougou, Burkina Faso",
+  profession: "Menuisier professionnel · Développeur Web & applications · Chef d'entreprise",
   tagline:
     "Entrepreneur · Développeur Web & PWA · Gestion de projets · Sport & Technologie · Menuiserie & Agencement",
   positioning:
     "Un profil volontairement multidisciplinaire : entrepreneuriat, technologie, gestion de projet, savoir-faire technique et connaissance du terrain.",
   heroLead:
     "Je conçois, je développe et je construis des projets réels — des plateformes numériques déployées en production aux ouvrages de menuiserie sur mesure.",
-  email: "adonae977@gmail.com", // repris de la fiche Minerva Solutions — à confirmer pour usage portfolio personnel
-  phone: "+226 78 48 15 06", // repris de la fiche Minerva Solutions — à confirmer pour usage portfolio personnel
+  email: "adonae977@gmail.com", // confirmé par le CV
+  phone: "+226 78 48 15 06", // numéro confirmé par le CV (le CV en liste trois)
+  languages: ["Français", "Anglais", "Espagnol", "Mooré", "Gourmantchéma"],
+  driving: "Permis de conduire catégorie C — trois ans de conduite à plein temps à Ouagadougou",
   cvAvailable: false,
   photoAvailable: false,
   links: {
@@ -30,7 +34,7 @@ export const expertiseAreas = [
   {
     title: "Entrepreneuriat",
     description:
-      "Fondateur de Minerva Solutions (formalisation SASU prévue en novembre 2026), porteur de projets numériques et commerciaux.",
+      "Fondateur de Minerva Solutions (formalisation SASU prévue en novembre 2026), gérant de WBST, porteur de projets numériques et commerciaux.",
   },
   {
     title: "Gestion de projets",
@@ -40,12 +44,119 @@ export const expertiseAreas = [
   {
     title: "Menuiserie & Agencement",
     description:
-      "CQP (2018) et BQP (2021) en menuiserie/bois et métal. Conception, fabrication, finition — bois massif (Iroko, Samba), panneaux dérivés.",
+      "CQP et BQP en menuiserie bois (formation 2016–2021). Conception, fabrication, finition — bois massif (Iroko, Samba), panneaux dérivés.",
   },
   {
     title: "Sport & Technologie",
     description:
       "Digitalisation de compétitions sportives locales — suivi en direct, statistiques, communication événementielle.",
+  },
+]
+
+// Impact sport : bandeau de la page d'accueil. Chaque chiffre vient de l'étude de cas
+// Local Live Sport (CV et déclarations de Rodrigue) — à garder cohérent avec projects.js.
+export const sportImpact = {
+  title: "Au service du sport local",
+  intro:
+    "Local Live Sport (LLS) est la plateforme de suivi des compétitions sportives locales conçue et mise en ligne par Minerva Solutions. Lancée à Bogandé, elle est actuellement en test grandeur nature — phase 1 nationale (2026).",
+  stats: [
+    { value: "4", label: "régions du Burkina Faso couvertes" },
+    { value: "5", label: "provinces : Fada N'Gourma, Ouagadougou, Bogandé, Boulsa, Piéla" },
+    { value: "≈ 20", label: "jeunes volontaires mobilisés sur le terrain" },
+    { value: "3ᵉ", label: "édition du tournoi MARACANA BO.VA.C.S (2026) suivie en direct" },
+  ],
+  projectSlug: "sirba-live-score",
+}
+
+// Parcours académique (complémentaire au profil professionnel).
+export const academicPath = [
+  {
+    period: "2015 – 2020",
+    title: "Baccalauréat série D",
+    place: "Lycée Privé Ramodgwendé",
+  },
+  {
+    period: "2021 – 2022",
+    title: "Licence — niveau L2, Sciences économiques et de gestion (SEG)",
+    place: "Université Thomas-Sankara, UFR/SEG",
+  },
+  {
+    period: "2025 – 2027",
+    title: "Licence LSIO — Sciences infirmières et obstétricales (L1, L2)",
+    place: "Université et École de Santé Sainte Edwige",
+    note: "En cours",
+  },
+]
+export const earlierDiplomas = "CEP (2010) — BEPC (2014, Collège de Bogandé)"
+
+export const professionalTraining = [
+  {
+    period: "2016 – 2021",
+    title: "CQP et BQP — menuiserie bois",
+    place: "Entreprise Wend Benedo Services et Travaux (WBST), Bogandé",
+    note: "CQP obtenu en 2018, BQP obtenu en 2021.",
+  },
+  {
+    period: "2023 – 2024",
+    title: "Développement web et applications — niveau 1 (junior)",
+    place: "Business Digital School",
+  },
+]
+
+export const entrepreneurialTraining = [
+  {
+    period: "Mai 2018",
+    title: "Formation des jeunes en éducation financière",
+    place: "Ministère de la jeunesse, de la formation et de l'insertion professionnelles",
+  },
+  { period: "2019", title: "Leadership des jeunes", place: "ONG TIN TUA" },
+  { period: "2020", title: "Formation sur l'entrepreneuriat des jeunes", place: "Haut-commissariat de la Gnagna" },
+  {
+    period: "2021",
+    title: "Compétences de base en entrepreneuriat",
+    place: "Programme « Cultivons l'esprit d'entreprise » (CLE)",
+  },
+  {
+    period: "Mars 2021",
+    title: "Gestion et développement de micro-entreprise",
+    place: "Ministère de la jeunesse et de la promotion de l'entrepreneuriat",
+  },
+]
+
+// Fonctions et responsabilités (professionnelles et associatives), de la plus récente à la plus ancienne.
+export const responsibilities = [
+  {
+    period: "2026 — en cours",
+    role: "Fondateur",
+    org: "Minerva Solutions",
+    detail:
+      "Agence numérique de valorisation locale (SASU en cours de création, formalisation prévue en novembre 2026). Conception et mise en ligne de la plateforme Local Live Sport pour le sport local, lancée à Bogandé et déployée dans 4 régions du Burkina Faso — phase 1 nationale en test grandeur nature.",
+  },
+  {
+    period: "2025 – 2026",
+    role: "Gérant",
+    org: "Entreprise WBST (Wend Benedo Services et Travaux)",
+    detail:
+      "Gestion administrative, chef d'atelier, formateur et chef d'équipe sur le terrain — confection d'abris de type évolutif au profit de personnes déplacées internes, pour le NRC à Bogandé et Boulsa.",
+  },
+  {
+    period: "2022",
+    role: "Président du BE",
+    org: "Association ABCD",
+    detail:
+      "Création de l'association et organisation de l'édition 1 du Festival Vacances culturel de Bogandé (juin 2022).",
+  },
+  {
+    period: "2021",
+    role: "Président du BE",
+    org: "Association AJAP-B",
+    detail: "Création de l'association.",
+  },
+  {
+    period: "2021",
+    role: "Chargé des relations extérieures",
+    org: "Association APROMEB",
+    detail: "Création de l'association.",
   },
 ]
 
@@ -56,24 +167,38 @@ export const timeline = [
     detail: "Entreprise active depuis 2004, formalisée en 2017 — menuiserie bois, métallique, agencement, mobilier.",
   },
   {
-    year: "2018",
-    title: "CQP — Menuiserie/bois et métal",
-    detail: "Certificat de Qualification Professionnelle obtenu.",
+    year: "2016 – 2021",
+    title: "Formation CQP / BQP en menuiserie bois",
+    detail: "Formation au sein de WBST à Bogandé — CQP obtenu en 2018, BQP obtenu en 2021.",
   },
   {
-    year: "2021",
-    title: "BQP — Menuiserie/bois et métal",
-    detail: "Brevet de Qualification Professionnelle obtenu.",
+    year: "2018 – 2021",
+    title: "Formations en entrepreneuriat, leadership et gestion",
+    detail:
+      "Cinq attestations : éducation financière des jeunes (2018), leadership des jeunes (2019), entrepreneuriat des jeunes (2020), compétences de base en entrepreneuriat — programme CLE (2021), gestion et développement de micro-entreprise (2021).",
   },
   {
-    year: "En cours",
-    title: "Développement de Local Live Sport (LLS)",
-    detail: "PWA de suivi de compétitions de football en temps réel — en production depuis plusieurs éditions du tournoi MARACANA BO.VA.C.S.",
+    year: "2021 – 2022",
+    title: "Création d'associations de jeunes",
+    detail:
+      "APROMEB et AJAP-B (2021), puis ABCD (2022) dont il préside le bureau exécutif et organise l'édition 1 du Festival Vacances culturel de Bogandé (juin 2022).",
+  },
+  {
+    year: "2023 – 2024",
+    title: "Business Digital School — développement web et applications",
+    detail: "Niveau 1, développement web et app junior.",
+  },
+  {
+    year: "2025 – 2026",
+    title: "Gérant de WBST — abris évolutifs pour le NRC",
+    detail:
+      "Gestion administrative, direction d'atelier et encadrement d'équipes sur le terrain, à Bogandé et Boulsa, pour des abris destinés à des personnes déplacées internes.",
   },
   {
     year: "2026",
-    title: "Digitalisation du tournoi MARACANA BO.VA.C.S 2026 (3ᵉ édition, Bogandé)",
-    detail: "Local Live Sport (LLS) déployé pour le comité d'organisation : suivi des matchs, résultats, actualités, communication.",
+    title: "Local Live Sport (LLS) — du lancement à Bogandé au test national",
+    detail:
+      "Plateforme de suivi des compétitions sportives locales, support de la 3ᵉ édition du tournoi MARACANA BO.VA.C.S à Bogandé, déployée dans 4 régions — phase 1 nationale en cours de test grandeur nature.",
   },
   {
     year: "En cours",

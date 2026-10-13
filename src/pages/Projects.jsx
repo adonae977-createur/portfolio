@@ -6,7 +6,7 @@ import useDocumentMeta from "../hooks/useDocumentMeta"
 export default function Projects() {
   useDocumentMeta(
     "Projets",
-    "Tous les projets de Rodrigue Donatien Sawadogo, avec leur statut réel : Sirba Live Score, Minerva Alert, WBST et plus."
+    "Tous les projets de Rodrigue Donatien Sawadogo, avec leur statut réel : Local Live Sport, Minerva Alert, WBST et plus."
   )
   return (
     <section className="mx-auto max-w-6xl px-6 py-24">

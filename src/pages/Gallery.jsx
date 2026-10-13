@@ -1,7 +1,7 @@
 import useDocumentMeta from "../hooks/useDocumentMeta"
 
 const categories = [
-  { title: "Sirba Live Score", note: "Captures d'écran de l'application — à venir." },
+  { title: "Local Live Sport (LLS)", note: "Captures d'écran de l'application — à venir." },
   { title: "MARACANA BO.VA.C.S 2026", note: "Photos du tournoi — à venir." },
   { title: "WBST — Réalisations", note: "Mobilier, agencement, chantiers — à venir." },
   { title: "Projet NRC", note: "Photos de terrain — à venir, sous réserve d'autorisation." },

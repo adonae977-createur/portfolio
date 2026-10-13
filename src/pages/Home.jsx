@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import { profile, expertiseAreas } from "../data/profile"
+import { profile, expertiseAreas, sportImpact } from "../data/profile"
 import { featuredProjects } from "../data/projects"
 import StatusBadge from "../components/StatusBadge"
 
@@ -45,6 +45,29 @@ export default function Home() {
         <p className="font-display text-2xl md:text-3xl text-ink max-w-3xl leading-snug">
           {profile.positioning}
         </p>
+      </section>
+
+      {/* Impact sport */}
+      <section className="bg-accent-soft/40 border-y border-accent/20">
+        <div className="mx-auto max-w-6xl px-6 py-16">
+          <p className="text-accent font-medium uppercase tracking-wide text-sm mb-3">Sport & Technologie</p>
+          <h2 className="font-display text-2xl md:text-3xl font-semibold text-ink">{sportImpact.title}</h2>
+          <p className="mt-4 max-w-3xl text-slate-700 leading-relaxed">{sportImpact.intro}</p>
+          <dl className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {sportImpact.stats.map((s) => (
+              <div key={s.label} className="rounded-xl bg-white/70 border border-accent/20 p-5">
+                <dt className="font-display text-3xl font-semibold text-ink">{s.value}</dt>
+                <dd className="mt-2 text-sm text-slate-600 leading-snug">{s.label}</dd>
+              </div>
+            ))}
+          </dl>
+          <Link
+            to={`/projets/${sportImpact.projectSlug}`}
+            className="mt-8 inline-flex items-center text-sm font-medium text-ink hover:text-accent transition-colors"
+          >
+            Lire l'étude de cas Local Live Sport →
+          </Link>
+        </div>
       </section>
 
       {/* Expertise preview */}
