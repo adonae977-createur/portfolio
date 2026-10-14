@@ -21,6 +21,13 @@ export default function Footer() {
               {profile.phone}
             </a>
           </p>
+          {profile.whatsapp.map((w) => (
+            <p key={w.wa}>
+              <a href={`https://wa.me/${w.wa}`} target="_blank" rel="noreferrer" className="hover:text-accent">
+                WhatsApp : {w.display}
+              </a>
+            </p>
+          ))}
         </div>
 
         <div className="text-sm text-slate-400">

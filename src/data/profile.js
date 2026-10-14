@@ -15,6 +15,11 @@ export const profile = {
     "Je conçois, je développe et je construis des projets réels — des plateformes numériques déployées en production aux ouvrages de menuiserie sur mesure — tout en poursuivant une licence en sciences infirmières (L2).",
   email: "adonae977@gmail.com", // confirmé par le CV
   phone: "+226 78 48 15 06", // numéro confirmé par le CV (le CV en liste trois)
+  // Numéros WhatsApp communiqués par Rodrigue (indicatif Burkina Faso +226 supposé, cohérent avec le numéro du CV)
+  whatsapp: [
+    { display: "+226 72 56 36 22", wa: "22672563622" },
+    { display: "+226 75 61 76 87", wa: "22675617687" },
+  ],
   languages: ["Français", "Anglais", "Espagnol", "Mooré", "Gourmantchéma"],
   driving: "Permis de conduire catégorie C — trois ans de conduite à plein temps à Ouagadougou",
   cvAvailable: false,

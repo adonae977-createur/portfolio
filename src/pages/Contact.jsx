@@ -36,6 +36,27 @@ export default function Contact() {
             </a>
           </div>
           <div>
+            <span className="text-slate-400 text-sm block mb-2">WhatsApp</span>
+            <ul className="space-y-2">
+              {profile.whatsapp.map((w) => (
+                <li key={w.wa}>
+                  <a
+                    href={`https://wa.me/${w.wa}`}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label={`Écrire sur WhatsApp au ${w.display}`}
+                    className="inline-flex items-center gap-3 rounded-full border border-emerald-600/30 bg-emerald-50 px-4 py-2 text-ink hover:border-emerald-600 hover:bg-emerald-100 transition-colors"
+                  >
+                    <svg viewBox="0 0 24 24" className="h-5 w-5 fill-emerald-600" aria-hidden="true">
+                      <path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.1 14.1c-.2.6-1.2 1.2-1.7 1.2-.4.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.6-2.6-1.1-4.3-3.8-4.4-4-.1-.2-1-1.3-1-2.5s.6-1.8.9-2c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.1.1.3 0 .5l-.3.4-.3.4c-.1.1-.2.3-.1.5.5.9 1.2 1.6 2 2.1.3.2.8.4 1.1.5.2.1.4 0 .5-.1l.7-.9c.2-.2.3-.2.5-.1l1.8.9c.2.1.3.2.4.3.1.2.1.7-.1 1.3Z" />
+                    </svg>
+                    <span className="text-lg">{w.display}</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
             <span className="text-slate-400 text-sm block mb-1">Localisation</span>
             <span className="text-lg text-ink">{profile.location}</span>
           </div>
