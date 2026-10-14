@@ -2,7 +2,7 @@ import { profile } from "../data/profile"
 
 export default function Footer() {
   return (
-    <footer className="bg-ink text-slate-300">
+    <footer className="mt-10 bg-ink text-slate-300 border-t-4 border-accent/70">
       <div className="mx-auto max-w-6xl px-6 py-12 grid gap-8 md:grid-cols-3">
         <div>
           <p className="font-display text-white font-semibold">{profile.name}</p>

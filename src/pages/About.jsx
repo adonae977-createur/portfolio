@@ -9,7 +9,7 @@ export default function About() {
   )
   return (
     <section className="mx-auto max-w-3xl px-6 py-24">
-      <p className="text-accent font-medium uppercase tracking-wide text-sm mb-3">À propos</p>
+      <p className="eyebrow">À propos</p>
       <h1 className="font-display text-3xl md:text-4xl font-semibold text-ink">
         Entrepreneur, développeur, homme de terrain
       </h1>

@@ -7,12 +7,12 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-ink text-white">
-        <div className="mx-auto max-w-6xl px-6 py-24 md:py-32">
-          <p className="text-accent font-medium tracking-wide uppercase text-sm mb-4">
+      <section className="hero-bg relative overflow-hidden text-white">
+        <div className="relative z-10 mx-auto max-w-6xl px-6 py-24 md:py-36">
+          <p className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-accent font-medium tracking-wide uppercase text-xs mb-6 backdrop-blur">
             {profile.location}
           </p>
-          <h1 className="font-display text-4xl md:text-6xl font-semibold tracking-tight max-w-3xl">
+          <h1 className="text-gradient font-display text-4xl md:text-6xl font-semibold tracking-tight max-w-3xl pb-1">
             {profile.name}
           </h1>
           <p className="mt-6 text-lg md:text-xl text-slate-300 max-w-2xl">
@@ -25,13 +25,13 @@ export default function Home() {
           <div className="mt-10 flex flex-wrap gap-4">
             <Link
               to="/projets"
-              className="inline-flex items-center rounded-md bg-accent px-5 py-3 text-sm font-medium text-ink hover:bg-accent/90 transition-colors"
+              className="inline-flex items-center rounded-full bg-accent px-6 py-3 text-sm font-medium text-ink shadow-lg shadow-accent/30 hover:bg-white transition-colors"
             >
               Voir mes projets
             </Link>
             <Link
               to="/contact"
-              className="inline-flex items-center rounded-md border border-white/20 px-5 py-3 text-sm font-medium text-white hover:bg-white/10 transition-colors"
+              className="inline-flex items-center rounded-full border border-white/25 bg-white/5 px-6 py-3 text-sm font-medium text-white backdrop-blur hover:bg-white/15 transition-colors"
             >
               Me contacter
             </Link>
@@ -41,7 +41,7 @@ export default function Home() {
 
       {/* Positionnement */}
       <section className="mx-auto max-w-6xl px-6 py-20">
-        <p className="text-accent font-medium uppercase tracking-wide text-sm mb-3">Positionnement</p>
+        <p className="eyebrow">Positionnement</p>
         <p className="font-display text-2xl md:text-3xl text-ink max-w-3xl leading-snug">
           {profile.positioning}
         </p>
@@ -66,7 +66,7 @@ export default function Home() {
           <p className="mt-4 max-w-3xl text-slate-700 leading-relaxed">{sportImpact.intro}</p>
           <dl className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {sportImpact.stats.map((s) => (
-              <div key={s.label} className="rounded-xl bg-white/70 border border-accent/20 p-5">
+              <div key={s.label} className="rounded-2xl bg-white/90 border border-accent/20 p-5 shadow-sm">
                 <dt className="font-display text-3xl font-semibold text-ink">{s.value}</dt>
                 <dd className="mt-2 text-sm text-slate-600 leading-snug">{s.label}</dd>
               </div>
@@ -92,7 +92,7 @@ export default function Home() {
           </div>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {expertiseAreas.map((area) => (
-              <div key={area.title} className="rounded-xl border border-slate-200 p-6 hover:border-accent/40 transition-colors">
+              <div key={area.title} className="card card-hover p-6">
                 <h3 className="font-display font-semibold text-ink mb-2">{area.title}</h3>
                 <p className="text-sm text-slate-600 leading-relaxed">{area.description}</p>
               </div>
@@ -114,10 +114,10 @@ export default function Home() {
             <Link
               key={p.slug}
               to={`/projets/${p.slug}`}
-              className={`group rounded-xl border p-6 hover:border-accent/40 hover:shadow-sm transition-all ${
+              className={`group card card-hover p-6 ${
                 i === 0
-                  ? "md:col-span-2 border-accent/50 bg-accent-soft/30 md:p-8"
-                  : "border-slate-200"
+                  ? "md:col-span-2 !border-accent/50 !bg-accent-soft/30 md:p-8"
+                  : ""
               }`}
             >
               <div className="flex items-start justify-between gap-4">
@@ -134,8 +134,8 @@ export default function Home() {
       </section>
 
       {/* CTA final */}
-      <section className="bg-ink text-white">
-        <div className="mx-auto max-w-6xl px-6 py-20 text-center">
+      <section className="hero-bg relative overflow-hidden text-white">
+        <div className="relative z-10 mx-auto max-w-6xl px-6 py-20 text-center">
           <h2 className="font-display text-2xl md:text-3xl font-semibold">
             Un projet à construire ensemble ?
           </h2>
@@ -144,7 +144,7 @@ export default function Home() {
           </p>
           <Link
             to="/contact"
-            className="mt-8 inline-flex items-center rounded-md bg-accent px-6 py-3 text-sm font-medium text-ink hover:bg-accent/90 transition-colors"
+            className="mt-8 inline-flex items-center rounded-full bg-accent px-7 py-3 text-sm font-medium text-ink shadow-lg shadow-accent/30 hover:bg-white transition-colors"
           >
             Me contacter
           </Link>

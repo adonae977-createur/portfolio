@@ -45,16 +45,16 @@ export default function Expertise() {
   )
   return (
     <section className="mx-auto max-w-4xl px-6 py-24">
-      <p className="text-accent font-medium uppercase tracking-wide text-sm mb-3">Expertise</p>
+      <p className="eyebrow">Expertise</p>
       <h1 className="font-display text-3xl md:text-4xl font-semibold text-ink">Domaines de compétence</h1>
       <p className="mt-4 text-slate-500 max-w-2xl">
         Six domaines qui se recoupent plutôt qu'ils ne s'excluent — c'est cette combinaison qui fait la
         valeur du profil.
       </p>
 
-      <div className="mt-14 space-y-12">
+      <div className="mt-14 space-y-6">
         {expertiseAreas.map((area) => (
-          <div key={area.title} className="grid md:grid-cols-3 gap-6 border-t border-slate-200 pt-8">
+          <div key={area.title} className="card card-hover grid md:grid-cols-3 gap-6 p-6 md:p-8">
             <div>
               <h2 className="font-display text-xl font-semibold text-ink">{area.title}</h2>
               <p className="mt-2 text-sm text-slate-500">{area.description}</p>

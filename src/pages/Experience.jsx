@@ -8,13 +8,13 @@ export default function Experience() {
   )
   return (
     <section className="mx-auto max-w-3xl px-6 py-24">
-      <p className="text-accent font-medium uppercase tracking-wide text-sm mb-3">Expériences</p>
+      <p className="eyebrow">Expériences</p>
       <h1 className="font-display text-3xl md:text-4xl font-semibold text-ink">Fonctions et responsabilités</h1>
       <p className="mt-4 text-slate-500">Postes tenus dans des entreprises et des associations, du plus récent au plus ancien.</p>
 
       <div className="mt-10 space-y-6">
         {responsibilities.map((r) => (
-          <article key={`${r.org}-${r.period}`} className="rounded-xl border border-slate-200 p-6">
+          <article key={`${r.org}-${r.period}`} className="card card-hover p-6">
             <p className="text-xs uppercase tracking-wide text-slate-400">{r.period}</p>
             <h2 className="mt-1 font-display font-semibold text-ink">
               {r.role} — {r.org}
@@ -28,7 +28,7 @@ export default function Experience() {
       <ol className="mt-10 relative border-s border-slate-200 space-y-10">
         {timeline.map((item) => (
           <li key={item.title} className="ms-6">
-            <span className="absolute -start-[7px] mt-1.5 h-3.5 w-3.5 rounded-full bg-accent" />
+            <span className="absolute -start-[7px] mt-1.5 h-3.5 w-3.5 rounded-full bg-accent ring-4 ring-accent-soft" />
             <p className="text-xs uppercase tracking-wide text-slate-400">{item.year}</p>
             <h3 className="mt-1 font-display font-semibold text-ink">{item.title}</h3>
             <p className="mt-2 text-sm text-slate-600 leading-relaxed">{item.detail}</p>

@@ -126,7 +126,7 @@ export default function Gallery() {
 
   return (
     <section className="mx-auto max-w-6xl px-6 py-24">
-      <p className="text-accent font-medium uppercase tracking-wide text-sm mb-3">Réalisations</p>
+      <p className="eyebrow">Réalisations</p>
       <h1 className="font-display text-3xl md:text-4xl font-semibold text-ink">Galerie</h1>
       <p className="mt-4 text-slate-500 max-w-2xl">
         Des images du terrain : application, chantiers, atelier, événements et vie associative. Touchez ou cliquez une photo pour
@@ -145,7 +145,7 @@ export default function Gallery() {
                 <li key={g.id}>
                   <button
                     onClick={(e) => open(g.i, e.currentTarget)}
-                    className="group block w-full overflow-hidden rounded-xl border border-slate-200 bg-white text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                    className="group card card-hover block w-full overflow-hidden text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                     aria-label={`Agrandir : ${g.caption}`}
                   >
                     <div className={`${g.aspect === "portrait" ? "aspect-[3/4]" : g.aspect === "square" ? "aspect-square" : "aspect-[4/3]"} overflow-hidden ${g.pad ? "bg-white" : "bg-slate-100"}`}>

@@ -9,7 +9,7 @@ import {
 
 function Entry({ period, title, place, note }) {
   return (
-    <div className="flex gap-6">
+    <div className="card flex gap-6 p-4 md:p-5">
       <span className="text-sm text-slate-400 w-28 shrink-0">{period}</span>
       <div>
         <p className="font-medium text-ink">{title}</p>
@@ -27,7 +27,7 @@ export default function Formation() {
   )
   return (
     <section className="mx-auto max-w-3xl px-6 py-24">
-      <p className="text-accent font-medium uppercase tracking-wide text-sm mb-3">Formation & Certifications</p>
+      <p className="eyebrow">Formation & Certifications</p>
       <h1 className="font-display text-3xl md:text-4xl font-semibold text-ink">Parcours de formation</h1>
 
       <div className="mt-14">

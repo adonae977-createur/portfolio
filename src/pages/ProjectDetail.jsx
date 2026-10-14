@@ -65,7 +65,7 @@ export default function ProjectDetail() {
           <p className="text-xs uppercase tracking-wide text-slate-400 mb-2">Technologies</p>
           <div className="flex flex-wrap gap-2">
             {project.tech.map((t) => (
-              <span key={t} className="rounded-full bg-slate-100 px-3 py-1 text-xs text-slate-600">
+              <span key={t} className="rounded-full bg-white border border-slate-200 px-3 py-1 text-xs text-slate-600">
                 {t}
               </span>
             ))}
@@ -78,7 +78,7 @@ export default function ProjectDetail() {
           href={project.url}
           target="_blank"
           rel="noreferrer"
-          className="mt-8 inline-flex items-center rounded-md bg-accent px-5 py-3 text-sm font-medium text-ink hover:bg-accent/90 transition-colors"
+          className="mt-8 inline-flex items-center rounded-full bg-accent px-6 py-3 shadow-sm hover:shadow-md text-sm font-medium text-ink hover:bg-accent/90 transition-colors"
         >
           Voir le site →
         </a>
@@ -92,7 +92,7 @@ export default function ProjectDetail() {
               .filter((g) => g.projectSlug === project.slug)
               .map((g) => (
                 <li key={g.id}>
-                  <Link to="/galerie" className="block overflow-hidden rounded-lg border border-slate-200">
+                  <Link to="/galerie" className="block overflow-hidden card">
                     <img
                       src={g.src}
                       alt={g.alt}

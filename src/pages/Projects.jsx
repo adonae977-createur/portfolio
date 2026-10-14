@@ -20,7 +20,7 @@ export default function Projects() {
           <Link
             key={p.slug}
             to={`/projets/${p.slug}`}
-            className={`group rounded-xl border p-6 hover:border-accent/40 hover:shadow-sm transition-all ${
+            className={`group card card-hover p-6 ${
               i === 0 ? "md:col-span-2 border-accent/50 bg-accent-soft/30" : "border-slate-200"
             }`}
           >
