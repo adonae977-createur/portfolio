@@ -27,8 +27,10 @@ export default function About() {
           principalement avec React, Firebase et l'écosystème JavaScript moderne. Je gère l'ensemble du cycle :
           conception, développement, déploiement et maintenance, comme sur{" "}
           <span className="text-ink font-medium">Local Live Sport (LLS)</span>, la plateforme de suivi des
-          compétitions sportives locales lancée à Bogandé, support de la 3ᵉ édition du tournoi MARACANA BO.VA.C.S
-          et déployée aujourd'hui dans quatre régions du Burkina Faso.
+          compétitions sportives locales lancée à Bogandé, qui a déjà couvert quatre compétitions (MARACANA
+          BO.VA.C.S 2026 et MARACANA Platini Service à Bogandé, MARACANA de la résilience et de la cohésion
+          sociale à Piéla, Coupe jeunesse citoyenne à Fada N'Gourma) et se déploie dans quatre régions du Burkina
+          Faso.
         </p>
         <p>
           Côté entrepreneurial, je porte <span className="text-ink font-medium">Minerva Solutions</span>, agence
@@ -42,6 +44,14 @@ export default function About() {
           Mon engagement est aussi associatif : j'ai contribué à créer trois associations de jeunes (APROMEB,
           AJAP-B, ABCD) et organisé la première édition du Festival Vacances culturel de Bogandé en juin 2022. Je
           parle {languages.slice(0, -1).join(", ")} et {languages[languages.length - 1]}.
+        </p>
+        <p>
+          En parallèle, je suis étudiant en <span className="text-ink font-medium">licence de sciences infirmières
+          et obstétricales</span> (actuellement en deuxième année, L2) à l'Université et École de Santé Sainte
+          Edwige. Cette formation nourrit directement ma réflexion sur les outils numériques pour la santé et la
+          formation : InfiniCare Studio, E-Learning Biologie Médicale et Nutritive sont nés de ce double regard,
+          soignant en formation et développeur — et sont présentés comme des concepts ou prototypes, pas comme des
+          produits finis.
         </p>
         <p>
           Cette double expérience — numérique et terrain — façonne ma façon de travailler : je préfère

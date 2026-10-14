@@ -29,21 +29,26 @@ const details = {
   "Sport & Technologie": [
     "Digitalisation de compétitions sportives locales",
     "Suivi en direct, statistiques, classements, communication événementielle",
-    "Local Live Sport (LLS) — en production, 3ᵉ édition du tournoi MARACANA BO.VA.C.S, déployé dans 4 régions (phase 1 nationale en test grandeur nature)",
+    "Local Live Sport (LLS) — en production, 4 compétitions couvertes (Bogandé, Piéla, Fada N'Gourma), déployé dans 4 régions (phase 1 nationale en test grandeur nature)",
+  ],
+  "Santé & Technologie": [
+    "Licence en sciences infirmières et obstétricales (LSIO), actuellement en L2 — Université et École de Santé Sainte Edwige",
+    "Concepts d'applications pour la santé et la formation : InfiniCare Studio (gestion de classe pour instituts de sciences infirmières), E-Learning Biologie Médicale, Nutritive (éducation nutritionnelle)",
+    "Ces projets sont à l'état de concept ou de prototype : ils sont présentés comme tels",
   ],
 }
 
 export default function Expertise() {
   useDocumentMeta(
     "Expertise",
-    "Technologie, entrepreneuriat, gestion de projets, menuiserie & agencement, sport & technologie — les domaines de compétence de Rodrigue Donatien Sawadogo."
+    "Technologie, entrepreneuriat, gestion de projets, menuiserie & agencement, sport & technologie, santé & technologie — les domaines de compétence de Rodrigue Donatien Sawadogo."
   )
   return (
     <section className="mx-auto max-w-4xl px-6 py-24">
       <p className="text-accent font-medium uppercase tracking-wide text-sm mb-3">Expertise</p>
       <h1 className="font-display text-3xl md:text-4xl font-semibold text-ink">Domaines de compétence</h1>
       <p className="mt-4 text-slate-500 max-w-2xl">
-        Cinq domaines qui se recoupent plutôt qu'ils ne s'excluent — c'est cette combinaison qui fait la
+        Six domaines qui se recoupent plutôt qu'ils ne s'excluent — c'est cette combinaison qui fait la
         valeur du profil.
       </p>
 

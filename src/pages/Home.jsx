@@ -99,11 +99,15 @@ export default function Home() {
           </Link>
         </div>
         <div className="grid gap-6 md:grid-cols-2">
-          {featuredProjects.map((p) => (
+          {featuredProjects.map((p, i) => (
             <Link
               key={p.slug}
               to={`/projets/${p.slug}`}
-              className="group rounded-xl border border-slate-200 p-6 hover:border-accent/40 hover:shadow-sm transition-all"
+              className={`group rounded-xl border p-6 hover:border-accent/40 hover:shadow-sm transition-all ${
+                i === 0
+                  ? "md:col-span-2 border-accent/50 bg-accent-soft/30 md:p-8"
+                  : "border-slate-200"
+              }`}
             >
               <div className="flex items-start justify-between gap-4">
                 <h3 className="font-display font-semibold text-ink group-hover:text-accent transition-colors">

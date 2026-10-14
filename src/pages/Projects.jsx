@@ -16,11 +16,13 @@ export default function Projects() {
       </p>
 
       <div className="mt-12 grid gap-6 md:grid-cols-2">
-        {projects.map((p) => (
+        {projects.map((p, i) => (
           <Link
             key={p.slug}
             to={`/projets/${p.slug}`}
-            className="group rounded-xl border border-slate-200 p-6 hover:border-accent/40 hover:shadow-sm transition-all"
+            className={`group rounded-xl border p-6 hover:border-accent/40 hover:shadow-sm transition-all ${
+              i === 0 ? "md:col-span-2 border-accent/50 bg-accent-soft/30" : "border-slate-200"
+            }`}
           >
             <div className="flex items-start justify-between gap-4">
               <h2 className="font-display font-semibold text-ink group-hover:text-accent transition-colors">

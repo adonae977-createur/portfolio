@@ -1,4 +1,4 @@
-// Statuts autorisés : "PRODUCTION" | "DEVELOPPEMENT" | "PROTOTYPE" | "CONCEPT" | "A_VERIFIER"
+// Statuts autorisés : "PRODUCTION" | "REALISE" (projet terminé) | "DEVELOPPEMENT" | "PROTOTYPE" | "CONCEPT" | "A_VERIFIER"
 // Un statut reflète l'état réel connu — jamais une supposition.
 
 export const statusLabels = {
@@ -6,6 +6,7 @@ export const statusLabels = {
   DEVELOPPEMENT: "En développement",
   PROTOTYPE: "Prototype / MVP",
   CONCEPT: "Concept",
+  REALISE: "Réalisé",
   A_VERIFIER: "À vérifier",
 }
 
@@ -32,7 +33,7 @@ export const projects = [
       role:
         "Conception, développement full-stack, architecture Firestore, déploiement et maintenance continue — de la modélisation des données aux Cloud Functions de notification.",
       resultats:
-        "Application en production, lancée à Bogandé et déployée dans 4 régions du Burkina Faso (phase 1 nationale en cours de test grandeur nature en 2026). Support de la 3ᵉ édition du tournoi MARACANA BO.VA.C.S à Bogandé, avec une couverture active sur 5 provinces (Fada N'Gourma, Ouagadougou, Bogandé, Boulsa, Piéla) et environ 20 jeunes volontaires mobilisés sur le terrain pour la remontée d'informations, de photos et de vidéos.",
+        "Application en production, lancée à Bogandé et déployée dans 4 régions du Burkina Faso (phase 1 nationale en cours de test grandeur nature en 2026). Compétitions couvertes : tournoi MARACANA BO.VA.C.S 2026 (3ᵉ édition) et MARACANA Platini Service à Bogandé, MARACANA de la résilience et de la cohésion sociale à Piéla, Coupe jeunesse citoyenne à Fada N'Gourma. Couverture active sur 5 provinces (Fada N'Gourma, Ouagadougou, Bogandé, Boulsa, Piéla) et environ 20 jeunes volontaires mobilisés sur le terrain pour la remontée d'informations, de photos et de vidéos.",
       promotion:
         "Actions de promotion et de présentation de la solution menées par l'équipe : mission à Fada N'Gourma pour présenter le projet au gouvernorat, au haut-commissariat, à la direction provinciale des sports et de la jeunesse, ainsi qu'à des reporters et des promoteurs de compétitions.",
       preuves: "Application publique : sirba-live.web.app",
@@ -42,9 +43,10 @@ export const projects = [
     slug: "bovacs-2026",
     title: "Tournoi MARACANA BO.VA.C.S 2026",
     category: "Sport & Technologie",
-    status: "PRODUCTION",
+    status: "REALISE",
+    statusNote: "Tournoi terminé — Local Live Sport a assuré le suivi de la compétition.",
     summary:
-      "3ᵉ édition du tournoi de Bogandé : Local Live Sport (LLS) utilisé par le comité d'organisation pour le suivi des matchs, la publication des résultats et des actualités, et la communication avec les supporters.",
+      "3ᵉ édition du tournoi de Bogandé (terminée) : Local Live Sport (LLS) a servi au comité d'organisation pour le suivi des matchs, la publication des résultats et des actualités, et la communication avec les supporters.",
     tech: ["Local Live Sport (LLS)"],
     featured: true,
     priority: 2,
@@ -54,11 +56,10 @@ export const projects = [
       besoin:
         "Donner au comité d'organisation un outil de suivi des matchs, de publication des résultats et actualités, et de communication avec les supporters et les partenaires.",
       solution:
-        "Déploiement de Local Live Sport (LLS) comme solution numérique officielle du tournoi, couvrant l'ensemble des phases de la compétition.",
+        "Déploiement de Local Live Sport (LLS) comme solution numérique du tournoi, couvrant l'ensemble des phases de la compétition.",
       role: "Développeur et fournisseur de la solution numérique du tournoi.",
       resultats:
-        "Suivi des matchs et des différentes phases, publication de résultats et d'actualités, production de contenus digitaux et valorisation de partenaires. Un chiffre de 13 contrats de sponsoring signés avec des entreprises locales a été évoqué — marqué À VÉRIFIER tant qu'une preuve documentaire n'est pas fournie.",
-      preuves: "À VÉRIFIER — captures d'écran et communiqués du comité d'organisation à joindre.",
+        "Suivi des matchs et des différentes phases, publication de résultats et d'actualités, production de contenus digitaux et valorisation de partenaires. Tournoi terminé.",
     },
   },
   {
@@ -85,15 +86,15 @@ export const projects = [
       resultats:
         "Marchés publics et privés menés dans les secteurs de la menuiserie et de l'agencement ; dimension de transmission et de formation professionnelle active ; site web professionnel en ligne présentant l'entreprise, ses essences de bois (Teck, Vène) et son école de formation CQP/BQP.",
       preuves:
-        "Site public : adonae977-createur.github.io/wendbenedo-services-et-travaux.bf (domaine wendbenedo-bois.bf prévu). Chiffres de marchés — À VÉRIFIER, documents à joindre.",
+        "Site public : adonae977-createur.github.io/wendbenedo-services-et-travaux.bf (domaine wendbenedo-bois.bf prévu).",
     },
   },
   {
     slug: "nrc-bogande",
     title: "Projet WBST × Norwegian Refugee Council (NRC)",
     category: "Menuiserie & Agencement",
-    status: "A_VERIFIER",
-    statusNote: "Réalisation de l'entreprise WBST, rôle de Rodrigue précisé — convention ou attestation NRC/WBST à joindre.",
+    status: "REALISE",
+    statusNote: "Projet réalisé par l'entreprise WBST (2025–2026), menée en équipe — rôle de Rodrigue : gérant et chef d'équipe.",
     summary:
       "Participation de WBST à un projet du NRC à Bogandé et Boulsa : confection d'abris de type évolutif (structures bois et bâches), environ 720 abris destinés à des personnes déplacées internes.",
     tech: [],
@@ -109,7 +110,6 @@ export const projects = [
       role:
         "Gérant de WBST, chef d'atelier et formateur chef d'équipe sur le terrain (2025–2026) — ossatures bois, coordination avec les maçons, gestion des matériaux, interaction avec les bénéficiaires. Réalisation de l'entreprise WBST, menée en équipe.",
       resultats: "Environ 720 abris concernés par le projet, selon les informations communiquées par WBST.",
-      preuves: "À VÉRIFIER — documents ou convention NRC/WBST à joindre si disponibles.",
     },
   },
   {
@@ -157,7 +157,7 @@ export const projects = [
       role:
         "Conception produit et technique — modèle de données, choix de l'agrégateur de paiement et de la région d'hébergement — et développement en cours.",
       resultats:
-        "Projet en développement actif, propriété de Minerva Solutions SASU. L'authentification par SMS pour les numéros du Burkina Faso est en attente du passage au plan Firebase Blaze (prévu décembre 2026), préalable à la publication sur Google Play.",
+        "Projet en développement actif, projet de Minerva Solutions (SASU en cours de création). L'authentification par SMS pour les numéros du Burkina Faso est en attente du passage au plan Firebase Blaze (prévu décembre 2026), préalable à la publication sur Google Play.",
       preuves: "Dépôt de code privé — démonstration à joindre une fois disponible.",
     },
   },
@@ -202,31 +202,11 @@ export const projects = [
     category: "Technologie / Santé",
     status: "CONCEPT",
     summary:
-      "Application web d'éducation nutritionnelle sous la marque Minerva SASU — suivi calorique, quiz interactifs, plans de repas, programmes dédiés (ex. gestion du diabète).",
+      "Application web d'éducation nutritionnelle sous la marque Minerva Solutions (SASU en cours de création) — suivi calorique, quiz interactifs, plans de repas, programmes dédiés (ex. gestion du diabète).",
     tech: ["HTML", "CSS", "JavaScript"],
     url: "https://adonae977-createur.github.io/Nutritive-Skills/",
     featured: false,
     priority: 10,
-  },
-  {
-    slug: "bijouterie-lankoande",
-    title: "E-commerce Bijouterie Lankoandé",
-    category: "Technologie",
-    status: "A_VERIFIER",
-    summary: "Site vitrine / catalogue marchand avec prise de commande directe via WhatsApp.",
-    tech: [],
-    featured: false,
-    priority: 11,
-  },
-  {
-    slug: "retro-racing",
-    title: "Retro Racing",
-    category: "Technologie",
-    status: "A_VERIFIER",
-    summary: "Jeu vidéo web — course cycliste rétro jouable dans le navigateur.",
-    tech: ["JavaScript"],
-    featured: false,
-    priority: 12,
   },
 ]
 

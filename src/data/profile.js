@@ -8,11 +8,11 @@ export const profile = {
   location: "Ouagadougou, Burkina Faso",
   profession: "Menuisier professionnel · Développeur Web & applications · Chef d'entreprise",
   tagline:
-    "Entrepreneur · Développeur Web & PWA · Gestion de projets · Sport & Technologie · Menuiserie & Agencement",
+    "Entrepreneur · Développeur Web & PWA · Sport & Technologie · Menuiserie & Agencement · Étudiant en sciences infirmières",
   positioning:
     "Un profil volontairement multidisciplinaire : entrepreneuriat, technologie, gestion de projet, savoir-faire technique et connaissance du terrain.",
   heroLead:
-    "Je conçois, je développe et je construis des projets réels — des plateformes numériques déployées en production aux ouvrages de menuiserie sur mesure.",
+    "Je conçois, je développe et je construis des projets réels — des plateformes numériques déployées en production aux ouvrages de menuiserie sur mesure — tout en poursuivant une licence en sciences infirmières (L2).",
   email: "adonae977@gmail.com", // confirmé par le CV
   phone: "+226 78 48 15 06", // numéro confirmé par le CV (le CV en liste trois)
   languages: ["Français", "Anglais", "Espagnol", "Mooré", "Gourmantchéma"],
@@ -51,6 +51,11 @@ export const expertiseAreas = [
     description:
       "Digitalisation de compétitions sportives locales — suivi en direct, statistiques, communication événementielle.",
   },
+  {
+    title: "Santé & Technologie",
+    description:
+      "Étudiant en licence de sciences infirmières (L2) et développeur : des concepts d'applications pour la santé et la formation, nés de ce double regard.",
+  },
 ]
 
 // Impact sport : bandeau de la page d'accueil. Chaque chiffre vient de l'étude de cas
@@ -63,7 +68,7 @@ export const sportImpact = {
     { value: "4", label: "régions du Burkina Faso couvertes" },
     { value: "5", label: "provinces : Fada N'Gourma, Ouagadougou, Bogandé, Boulsa, Piéla" },
     { value: "≈ 20", label: "jeunes volontaires mobilisés sur le terrain" },
-    { value: "3ᵉ", label: "édition du tournoi MARACANA BO.VA.C.S (2026) suivie en direct" },
+    { value: "4", label: "compétitions couvertes : MARACANA BO.VA.C.S 2026 et MARACANA Platini Service (Bogandé), MARACANA de la résilience et de la cohésion sociale (Piéla), Coupe jeunesse citoyenne (Fada N'Gourma)" },
   ],
   projectSlug: "sirba-live-score",
 }
@@ -82,9 +87,9 @@ export const academicPath = [
   },
   {
     period: "2025 – 2027",
-    title: "Licence LSIO — Sciences infirmières et obstétricales (L1, L2)",
+    title: "Licence LSIO — Sciences infirmières et obstétricales",
     place: "Université et École de Santé Sainte Edwige",
-    note: "En cours",
+    note: "En cours — actuellement en deuxième année (L2).",
   },
 ]
 export const earlierDiplomas = "CEP (2010) — BEPC (2014, Collège de Bogandé)"
@@ -198,7 +203,12 @@ export const timeline = [
     year: "2026",
     title: "Local Live Sport (LLS) — du lancement à Bogandé au test national",
     detail:
-      "Plateforme de suivi des compétitions sportives locales, support de la 3ᵉ édition du tournoi MARACANA BO.VA.C.S à Bogandé, déployée dans 4 régions — phase 1 nationale en cours de test grandeur nature.",
+      "Plateforme de suivi des compétitions sportives locales, utilisée pour couvrir quatre compétitions locales (MARACANA BO.VA.C.S 2026 et MARACANA Platini Service à Bogandé, MARACANA de la résilience et de la cohésion sociale à Piéla, Coupe jeunesse citoyenne à Fada N'Gourma), déployée dans 4 régions — phase 1 nationale en cours de test grandeur nature.",
+  },
+  {
+    year: "2025 – 2027",
+    title: "Licence en sciences infirmières et obstétricales — L2 en cours",
+    detail: "Université et École de Santé Sainte Edwige, menée en parallèle des activités entrepreneuriales et de développement.",
   },
   {
     year: "En cours",
