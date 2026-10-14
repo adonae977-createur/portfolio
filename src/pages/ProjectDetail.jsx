@@ -1,5 +1,6 @@
 import { Link, useParams } from "react-router-dom"
 import { projects } from "../data/projects"
+import { gallery } from "../data/gallery"
 import StatusBadge from "../components/StatusBadge"
 import useDocumentMeta from "../hooks/useDocumentMeta"
 
@@ -70,6 +71,31 @@ export default function ProjectDetail() {
         >
           Voir le site →
         </a>
+      )}
+
+      {gallery.some((g) => g.projectSlug === project.slug) && (
+        <div className="mt-12">
+          <p className="text-xs uppercase tracking-wide text-slate-400 mb-3">En images</p>
+          <ul className="grid gap-3 grid-cols-2 md:grid-cols-3">
+            {gallery
+              .filter((g) => g.projectSlug === project.slug)
+              .map((g) => (
+                <li key={g.id}>
+                  <Link to="/galerie" className="block overflow-hidden rounded-lg border border-slate-200">
+                    <img
+                      src={g.src}
+                      alt={g.alt}
+                      width={g.width}
+                      height={g.height}
+                      loading="lazy"
+                      decoding="async"
+                      className="aspect-[4/3] w-full object-cover"
+                    />
+                  </Link>
+                </li>
+              ))}
+          </ul>
+        </div>
       )}
 
       {project.caseStudy && (

@@ -8,6 +8,7 @@ const links = [
   { to: "/experiences", label: "Expériences" },
   { to: "/projets", label: "Projets" },
   { to: "/formation", label: "Formation" },
+  { to: "/galerie", label: "Galerie" },
   { to: "/contact", label: "Contact" },
 ]
 
@@ -21,7 +22,7 @@ export default function Navbar() {
           R. D. Sawadogo
         </NavLink>
 
-        <ul className="hidden md:flex items-center gap-8 text-sm">
+        <ul className="hidden md:flex items-center gap-4 lg:gap-8 text-sm">
           {links.map((l) => (
             <li key={l.to}>
               <NavLink
