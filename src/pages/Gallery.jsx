@@ -109,7 +109,7 @@ function Lightbox({ index, onClose, onMove }) {
 export default function Gallery() {
   useDocumentMeta(
     "Galerie",
-    "Réalisations de Rodrigue Donatien Sawadogo en images : abris évolutifs, menuiserie, événements culturels et sportifs, vie associative."
+    "Réalisations de Rodrigue Donatien Sawadogo en images : Local Live Sport, abris évolutifs, menuiserie, événements culturels et sportifs, vie associative."
   )
   const [current, setCurrent] = useState(null)
   const lastTrigger = useRef(null)
@@ -129,7 +129,7 @@ export default function Gallery() {
       <p className="text-accent font-medium uppercase tracking-wide text-sm mb-3">Réalisations</p>
       <h1 className="font-display text-3xl md:text-4xl font-semibold text-ink">Galerie</h1>
       <p className="mt-4 text-slate-500 max-w-2xl">
-        Des images du terrain : chantiers, atelier, événements et vie associative. Touchez ou cliquez une photo pour
+        Des images du terrain : application, chantiers, atelier, événements et vie associative. Touchez ou cliquez une photo pour
         l'agrandir.
       </p>
 
@@ -148,7 +148,7 @@ export default function Gallery() {
                     className="group block w-full overflow-hidden rounded-xl border border-slate-200 bg-white text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                     aria-label={`Agrandir : ${g.caption}`}
                   >
-                    <div className={`aspect-[4/3] overflow-hidden ${g.pad ? "bg-white" : "bg-slate-100"}`}>
+                    <div className={`${g.aspect === "portrait" ? "aspect-[3/4]" : g.aspect === "square" ? "aspect-square" : "aspect-[4/3]"} overflow-hidden ${g.pad ? "bg-white" : "bg-slate-100"}`}>
                       <img
                         src={g.src}
                         alt={g.alt}
@@ -157,7 +157,7 @@ export default function Gallery() {
                         loading="lazy"
                         decoding="async"
                         className={`h-full w-full transition-transform duration-300 group-hover:scale-105 ${
-                          g.contain ? (g.pad ? "object-contain p-4" : "object-contain") : "object-cover"
+                          g.contain ? (g.pad ? "object-contain p-4" : "object-contain") : g.aspect === "portrait" ? "object-cover object-top" : "object-cover"
                         }`}
                       />
                     </div>

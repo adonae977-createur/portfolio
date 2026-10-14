@@ -50,8 +50,19 @@ export default function Home() {
       {/* Impact sport */}
       <section className="bg-accent-soft/40 border-y border-accent/20">
         <div className="mx-auto max-w-6xl px-6 py-16">
-          <p className="text-accent font-medium uppercase tracking-wide text-sm mb-3">Sport & Technologie</p>
-          <h2 className="font-display text-2xl md:text-3xl font-semibold text-ink">{sportImpact.title}</h2>
+          <div className="flex items-center gap-5">
+            <img
+              src="/images/lls-logo.webp"
+              alt="Logo de Local Live Sport"
+              width="72"
+              height="72"
+              className="h-16 w-16 md:h-[72px] md:w-[72px] rounded-full shadow-sm"
+            />
+            <div>
+              <p className="text-accent font-medium uppercase tracking-wide text-sm mb-1">Sport & Technologie</p>
+              <h2 className="font-display text-2xl md:text-3xl font-semibold text-ink">{sportImpact.title}</h2>
+            </div>
+          </div>
           <p className="mt-4 max-w-3xl text-slate-700 leading-relaxed">{sportImpact.intro}</p>
           <dl className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {sportImpact.stats.map((s) => (

@@ -4,6 +4,12 @@
 
 export const galleryCategories = [
   {
+    id: "lls",
+    title: "Local Live Sport (LLS) en images",
+    intro:
+      "Captures de l'application en production et affiches de compétitions locales dont LLS est le partenaire numérique.",
+  },
+  {
     id: "abris",
     title: "Abris humanitaires de type évolutif",
     intro:
@@ -27,6 +33,83 @@ export const galleryCategories = [
 ]
 
 export const gallery = [
+  {
+    id: "lls-accueil",
+    category: "lls",
+    src: "/images/gallery/lls-accueil.webp",
+    width: 720,
+    height: 1600,
+    aspect: "portrait",
+    alt: "Écran d'accueil de l'application Local Live Sport : choix de la compétition (Piéla, Ouagadougou, Bogandé), match en direct et réactions.",
+    caption: "Accueil de l'application : une compétition par ville (Piéla, Ouagadougou, Bogandé), direct et réactions.",
+    projectSlug: "sirba-live-score",
+  },
+  {
+    id: "lls-calendrier",
+    category: "lls",
+    src: "/images/gallery/lls-calendrier.webp",
+    width: 720,
+    height: 1600,
+    aspect: "portrait",
+    alt: "Écran Calendrier et résultats de l'application, avec la finale et les demi-finales à venir.",
+    caption: "Calendrier : finale et demi-finales du tournoi MARACANA Platini Services (Bogandé).",
+    projectSlug: "sirba-live-score",
+  },
+  {
+    id: "lls-resultats",
+    category: "lls",
+    src: "/images/gallery/lls-resultats.webp",
+    width: 720,
+    height: 1600,
+    aspect: "portrait",
+    alt: "Écran des résultats de matchs par groupe avec les scores.",
+    caption: "Résultats des matchs par groupe.",
+    projectSlug: "sirba-live-score",
+  },
+  {
+    id: "lls-classement",
+    category: "lls",
+    src: "/images/gallery/lls-classement.webp",
+    width: 720,
+    height: 1600,
+    aspect: "portrait",
+    alt: "Écran du classement du tournoi, groupes A et B, avec bouton de partage WhatsApp.",
+    caption: "Classement par groupe, partageable sur WhatsApp.",
+    projectSlug: "sirba-live-score",
+  },
+  {
+    id: "lls-composition",
+    category: "lls",
+    src: "/images/gallery/lls-composition.webp",
+    width: 720,
+    height: 1600,
+    aspect: "portrait",
+    alt: "Écran de composition et formation des deux équipes sur un terrain de football.",
+    caption: "Composition et formation des équipes d'un match.",
+    projectSlug: "sirba-live-score",
+  },
+  {
+    id: "affiche-finale-platini",
+    category: "lls",
+    src: "/images/gallery/affiche-finale-platini.webp",
+    width: 1200,
+    height: 1200,
+    aspect: "square",
+    alt: "Affiche de la finale du tournoi MARACANA Platini Services entre AS Police et AS Justice, le 12 septembre 2026 à Bogandé.",
+    caption: "Affiche de la finale du tournoi MARACANA Platini Services, dédié à la paix (Bogandé, 12 sept. 2026).",
+    projectSlug: "sirba-live-score",
+  },
+  {
+    id: "affiche-quarts-fada",
+    category: "lls",
+    src: "/images/gallery/affiche-quarts-fada.webp",
+    width: 720,
+    height: 740,
+    aspect: "square",
+    alt: "Extrait d'affiche : programme des quarts de finale de la Coupe jeunesse citoyenne de Fada N'Gourma, avec Local Live Sport partenaire digital officiel.",
+    caption: "Coupe jeunesse citoyenne de Fada N'Gourma : programme des quarts de finale, Local Live Sport partenaire digital officiel.",
+    projectSlug: "sirba-live-score",
+  },
   {
     id: "abri-evolutif-termine",
     category: "abris",

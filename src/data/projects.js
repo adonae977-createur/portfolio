@@ -21,6 +21,7 @@ export const projects = [
     tech: ["React 18", "Vite 5", "Firebase (Firestore, Auth, Hosting, Storage)", "Cloud Functions", "PWA / FCM"],
     statusNote: "En production — phase 1 nationale en cours de test grandeur nature (2026).",
     url: "https://sirba-live.web.app/",
+    logo: "/images/lls-logo.webp",
     featured: true,
     priority: 1,
     caseStudy: {

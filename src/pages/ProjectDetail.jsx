@@ -38,7 +38,18 @@ export default function ProjectDetail() {
       </Link>
 
       <div className="mt-6 flex items-start justify-between gap-4 flex-wrap">
-        <h1 className="font-display text-3xl md:text-4xl font-semibold text-ink">{project.title}</h1>
+        <div className="flex items-center gap-4">
+          {project.logo && (
+            <img
+              src={project.logo}
+              alt={`Logo de ${project.title}`}
+              width="64"
+              height="64"
+              className="h-14 w-14 md:h-16 md:w-16 rounded-full shadow-sm"
+            />
+          )}
+          <h1 className="font-display text-3xl md:text-4xl font-semibold text-ink">{project.title}</h1>
+        </div>
         <StatusBadge status={project.status} />
       </div>
       <p className="mt-1 text-sm uppercase tracking-wide text-slate-400">{project.category}</p>
